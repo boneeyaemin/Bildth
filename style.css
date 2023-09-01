@@ -1005,6 +1005,16 @@ h6{
   border-collapse: collapse;
 }
 
+.translate-y-0{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-11{
+  --tw-translate-y: 2.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-y-14{
   --tw-translate-y: 3.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1037,6 +1047,10 @@ h6{
 
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -1129,6 +1143,10 @@ h6{
 
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-b-\[5px\]{
+  border-bottom-width: 5px;
 }
 
 .border-\[\#E0E0E0\]{
@@ -1319,6 +1337,11 @@ h6{
   padding-right: 2.25rem;
 }
 
+.px-\[51px\]{
+  padding-left: 51px;
+  padding-right: 51px;
+}
+
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -1377,16 +1400,6 @@ h6{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-\[52px\]{
-  padding-left: 52px;
-  padding-right: 52px;
-}
-
-.px-\[51px\]{
-  padding-left: 51px;
-  padding-right: 51px;
 }
 
 .pb-10{
@@ -1575,6 +1588,14 @@ h6{
   text-decoration-line: underline;
 }
 
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-100{
+  opacity: 1;
+}
+
 .opacity-60{
   opacity: 0.6;
 }
@@ -1635,13 +1656,30 @@ h6{
   background-color: rgb(242 153 74 / var(--tw-bg-opacity));
 }
 
+.group:hover .group-hover\:visible{
+  visibility: visible;
+}
+
 .group:hover .group-hover\:z-50{
   z-index: 50;
+}
+
+.group:hover .group-hover\:hidden{
+  display: none;
+}
+
+.group:hover .group-hover\:translate-y-0{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
 }
 
 @media (min-width: 575px){
@@ -1655,6 +1693,10 @@ h6{
 
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
   }
 }
 
